@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forniture Store</title>
+    <!-- Font Awesom -->
+    <script src="https://kit.fontawesome.com/58a68cbbd5.js" crossorigin="anonymous"></script>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            <img src="./images/logo.svg" alt="Imagen logo">
+            <div class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+    <!-- Final Navbar -->
+    <!-- Hero -->
+    <header class="hero">
+        <div class="banner">
+            <h1 class="banner-title">Colección de Muebles</h1>
+            <button class="banner-btn">Comprar ahora</button>
+        </div>
+    </header>
+    <!-- Final Hero -->
+    <!-- Productos -->
+    <section class="products">
+        <div class="section-title">
+            <h2>Nuestros productos</h2>
+        </div>
+        <div class="products-center">
+            <article class="product">
+                <div class="img-container">
+                    <img src="./images/product-1.jpeg" alt="" class="product-img">
+                    <button class="bag-btn" data-id="1">
+                        <i class="fas fa-shopping-cart"></i>
+                        agregar al carrito
+                    </button>
+                </div>
+                <h3>Cama queen</h3>
+                <h4>$500</h4>
+            </article>
+        </div>
+    </section>
+    <!-- Final Productos -->
+    <!-- CART -->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="far fa-times-circle"></i>
+            </span>
+            <h2>Carrito de compras</h2>
+            <div class="cart-content">
+                <!-- CART Item -->
+                <div class="cart-item">
+                    <img src="./images/product-1.jpeg" alt="" srcset="">
+                    <div class="">
+                        <h4>Cama queen</h4>
+                        <h5>$500.00</h5>
+                        <span class="remove-item">Quitar</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-up"></i>
+                        <p class="item-amount">1</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <h3>Total: $<span class="cart-total"></span></h3>
+                    <button class="clear-cart banner-btn">Eliminar carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End CART -->
+    <script src="script.js"></script>
+</body>
+</html>
